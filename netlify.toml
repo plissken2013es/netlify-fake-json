@@ -1,4 +1,5 @@
+
 [[redirects]]
-from = "/star-wars"
-to = "/.netlify/functions/star-wars"
-status = 200
+  from = '/api/*'
+  to = '/.netlify/functions/:splat'
+  status = 200
