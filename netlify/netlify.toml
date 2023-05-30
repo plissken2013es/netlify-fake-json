@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/star-wars"
+to = "/.netlify/functions/star-wars"
+status = 200
