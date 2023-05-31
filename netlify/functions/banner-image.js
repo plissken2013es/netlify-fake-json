@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
 		image_url: "http://placekitten.com/" + width + "/" + height,  
 		height: height,
 		width: width,
-		targetURL: targetURL
+		target_url: targetURL
 	})
  
 	return {
