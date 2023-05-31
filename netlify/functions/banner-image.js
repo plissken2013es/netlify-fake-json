@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
  
 	const response = JSON.stringify({ 
 		text: randomQuote, 
-		url: "http://placekitten.com/" + width + "/" + height,  
+		image_url: "http://placekitten.com/" + width + "/" + height,  
 		height: height,
 		width: width,
 		targetURL: targetURL
