@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
 		"Descúbrelo",
 		"Vamos a por ello",
 		"Ni lo pienses",
-		"¿Qué mas da?",
+		"¿Qué más dará?",
 		"¡Hola, caracola!",
 		"Miraquitivoidisí",
 		"Hey, ho, let's go!"
