@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
 		"Where we're going we don't need roads."
 	]
 
-	const cta = [
+	const ctas = [
 		"Descúbrelo",
 		"Vamos a por ello",
 		"Ni lo pienses",
@@ -24,12 +24,23 @@ exports.handler = async (event, context) => {
 		"Miraquitivoidisí",
 		"Hey, ho, let's go!"
 	]
+
+	const urls = [
+		"https://www.create-store.com/es/20772-comprar-mediterranean-collection",
+		"https://www.create-store.com/es/content/2159-magazine-create-air",
+		"https://www.create-store.com/es/content/2107-magazine-mom-camp-con-maria-y-teresa",
+		"https://www.create-store.com/es/content/2100-magazine-mom-camp",
+		"https://www.create-store.com/es/content/2090-magazine-big-little-things",
+		"https://www.create-store.com/es/content/2055-recetas-blue-boom",
+		"https://www.create-store.com/es/content/2050-magazine-blue-boom",
+		"https://www.create-store.com/es/content/2048-magazine-sweet-valentine"
+	]
  
 	const randomTitle = quotes[Math.floor(Math.random() * quotes.length)]
-	const randomText = cta[Math.floor(Math.random() * cta.length)]
+	const randomText = ctas[Math.floor(Math.random() * ctas.length)]
+	const targetURL = urls[Math.floor(Math.random() * urls.length)]
 	const { width = "600" } = event.queryStringParameters;
 	const { height = "400" } = event.queryStringParameters;
-	const { targetURL = "https://www.create-store.com/es/content/1629-magazine-index" } = event.queryStringParameters
  
 	const response = JSON.stringify({ 
 		title: randomTitle,
