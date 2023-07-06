@@ -43,12 +43,12 @@ exports.handler = async (event, context) => {
 	const { height = "400" } = event.queryStringParameters;
  
 	const response = JSON.stringify({ 
-		title: randomTitle,
-		text: randomText,
-		image_url: "http://placekitten.com/" + width + "/" + height,  
-		height: height,
-		width: width,
-		target_url: targetURL
+		// title: randomTitle,
+		// text: randomText,
+		// image_url: "http://placekitten.com/" + width + "/" + height,  
+		// height: height,
+		// width: width,
+		// target_url: targetURL
 	})
  
 	return {
